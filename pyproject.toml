@@ -1,0 +1,9 @@
+[project]
+name = "triage-minion"
+version = "0.1.0"
+description = "OpenMinion agent that triages a public GitHub repo's open issues"
+requires-python = ">=3.11"
+dependencies = ["openminion>=0.1.8", "pydantic>=2"]
+license = {text = "Apache-2.0"}
+[project.scripts]
+triage-minion = "triage_minion.agent:main"
